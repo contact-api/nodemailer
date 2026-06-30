@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer";
-import type { EmailProvider, EmailPayload } from "../core/types.js";
+import type { EmailProvider, EmailPayload } from "@contact-api/core/types";
 
 export class NodemailerProvider implements EmailProvider {
   readonly id = "nodemailer";
