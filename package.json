@@ -9,8 +9,17 @@
     "url": "git+https://github.com/contact-api/nodemailer.git"
   },
   "homepage": "https://github.com/contact-api/nodemailer#readme",
-  "bugs": { "url": "https://github.com/contact-api/nodemailer/issues" },
-  "keywords": ["nodemailer", "smtp", "email", "contact-form", "typescript", "contact-api"],
+  "bugs": {
+    "url": "https://github.com/contact-api/nodemailer/issues"
+  },
+  "keywords": [
+    "nodemailer",
+    "smtp",
+    "email",
+    "contact-form",
+    "typescript",
+    "contact-api"
+  ],
   "type": "module",
   "scripts": {
     "typecheck": "tsc --noEmit",
@@ -20,7 +29,9 @@
     "build": "tsdown",
     "prepare": "npm run build"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.mts",
@@ -29,7 +40,7 @@
   },
   "dependencies": {
     "@contact-api/core": "github:contact-api/core",
-    "nodemailer": "^8.0.3"
+    "nodemailer": "^9.0.3"
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
