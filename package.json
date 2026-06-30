@@ -1,0 +1,42 @@
+{
+  "name": "@contact-api/nodemailer",
+  "description": "Nodemailer (SMTP) email provider for @contact-api/core",
+  "author": "Mason L'Etoile",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contact-api/nodemailer.git"
+  },
+  "homepage": "https://github.com/contact-api/nodemailer#readme",
+  "bugs": { "url": "https://github.com/contact-api/nodemailer/issues" },
+  "keywords": ["nodemailer", "smtp", "email", "contact-form", "typescript", "contact-api"],
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "build": "tsdown",
+    "prepare": "npm run build"
+  },
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "dependencies": {
+    "@contact-api/core": "github:contact-api/core",
+    "nodemailer": "^8.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/nodemailer": "^7.0.11",
+    "@vitest/coverage-v8": "^4.1.9",
+    "tsdown": "^0.22.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.9"
+  }
+}
